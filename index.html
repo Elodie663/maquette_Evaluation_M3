@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Maquette Ghost Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navbar principale avec les menus cliquables de gauche et droite -->
+
+<nav class="navbar navbar-expand-lg bg-light py-3 navbar-gradient"> <!--py-3 padding top & bottom = crée de l'espace -->
+                                                                    <!-- lg controle le responsive = replié au point de rupture -->
+  <div class="container-fluid">
+    
+    <!-- Menu gauche -->
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row gap-3">  <!--à réutliser pour le responsive : 
+                                                                            mb-2 mb-lg-0 = assure une bonne gestion des marges entre mobile et bureau
+                                                                            d-flex flex-row = force l’affichage horizontal des liens
+                                                                        -->
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Collection</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Author</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Portal</a></li>
+    </ul>
+
+    <!-- Menu droit -->
+    <div class="d-flex align-items-center gap-3">
+      <a href="#" class="text-dark" aria-label="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+      <a href="#" class="text-dark" aria-label="X (Twitter)"><i class="bi bi-twitter-x fs-5"></i></a>
+      <a href="#" class="btn btn-outline-primary btn-sm">Subscribe</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Barre du titre -->
+<div class="bg-white py-4 navbar-gradient">
+  <div class="container text-center">
+    <h1 class="m-0 fw-bold text-uppercase">Ghost</h1>
+    <p>Thoughts, stories and ideas</p>
+  </div>
+</div>
+
+<!--Sémantique "main" ouverture du container -->
+
+<main class="container-fluid py-5">
+
+  <!-- SECTION 1 : 8/4 -->
+
+  <section class="row mb-5 align-items-stretch">
+<div class="col-md-8">
+  <div class="p-4 h-100">
+    <!-- Ce bloc prend toute la largeur et la hauteur dispo -->
+    <div class="bg-primary text-white w-100 h-100 d-flex justify-content-center align-items-center">
+      <i class="fa-solid fa-circle-notch" style="font-size: 7rem;"></i>
+    </div>
+  </div>
+</div>
+
+
+    <div class="col-md-4">
+  <div class="p-4 h-100 d-flex flex-column">
+    <p class="text-danger">Getting started</p>
+    <h2><strong>Start here for a quick overview of everything you need to know</strong></h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sapiente iusto inventore? Provident molestiae saepe, corrupti blanditiis officia non, nisi nostrum modi tenetur sit vel culpa facilis fugit? Placeat, ipsam.</p>
+  </div>
+</div>
+
+  </section>
+
+<section class="row mb-5 align-items-stretch"> <!--conteneur parent et prorpiété flex poru aligner horizontalement les enfants -->
+
+<div class="col-md-4"> <!-- s'étend sur 4 colonnes -->
+  <div class="p-4 h-100 d-flex flex-column">
+    <!-- Div icône pleine largeur, hauteur fixe -->
+    <div class="bg-primary text-white p-4 d-flex justify-content-center align-items-center w-100" style="height: 150px;">
+      <i class="fa-solid fa-cloud" style="font-size: 7rem;"></i>
+    </div>
+    <p class="text-danger">Getting started</p>
+    <h2>Customizing your brand and design settings</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi sit repellat earum, officia ea totam tenetur autem suscipit. Repellat quidem accusamus quae cum, recusandae cupiditate et ipsum dignissimos laboriosam.</p>
+  </div>
+</div>
+
+
+<div class="col-md-4"> <!-- s'étend sur 4 colonnes -->
+  <div class="p-4 h-100 d-flex flex-column">
+    <!-- Div icône pleine largeur, hauteur fixe -->
+    <div class="bg-warning text-white p-4 d-flex justify-content-center align-items-center w-100" style="height: 150px;">
+      <h2>gh |</h2>
+    </div>
+    <p class="text-danger">Getting started</p>
+    <h2>Writing and managing content in Ghost, and advanced guide</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi sit repellat earum, officia ea totam tenetur autem suscipit. Repellat quidem accusamus quae cum, recusandae cupiditate et ipsum dignissimos laboriosam.</p>
+  </div>
+</div>
+
+<div class="col-md-4"> <!-- s'étend sur 4 colonnes -->
+  <div class="p-4 h-100 d-flex flex-column">
+    <!-- Div icône pleine largeur, hauteur fixe -->
+    <div class="bg-success text-white p-4 d-flex justify-content-center align-items-center w-100" style="height: 150px;">
+      <i class="fa-solid fa-lightbulb" style="font-size: 7rem;"></i>
+    </div>
+    <p class="text-danger">Getting started</p>
+    <h2>Building your audience with subscriber signups</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi sit repellat earum, officia ea totam tenetur autem suscipit. Repellat quidem accusamus quae cum, recusandae cupiditate et ipsum dignissimos laboriosam.</p>
+  </div>
+</div>
+
+</section>
+
+
+  <!-- SECTION 3 : 4/4/4 -->
+
+<section class="row mb-5 align-items-stretch"> <!--conteneur parent et prorpiété flex poru aligner horizontalement les enfants -->
+
+<div class="col-md-4"> <!-- s'étend sur 4 colonnes -->
+  <div class="p-4 h-100 d-flex flex-column">
+    <!-- Div icône pleine largeur, hauteur fixe -->
+    <div class="bg-primary text-white p-4 d-flex justify-content-center align-items-center w-100" style="height: 150px;">
+      <i class="bi bi-bricks" style="font-size: 8rem;"></i>
+
+    </div>
+    <p class="text-danger">Getting started</p>
+    <h2>Customizing your brand and design settings</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi sit repellat earum, officia ea totam tenetur autem suscipit. Repellat quidem accusamus quae cum, recusandae cupiditate et ipsum dignissimos laboriosam.</p>
+  </div>
+</div>
+
+
+<div class="col-md-4"> <!-- s'étend sur 4 colonnes -->
+  <div class="p-4 h-100 d-flex flex-column">
+    <!-- Div icône pleine largeur, hauteur fixe -->
+    <div class="bg-warning text-white p-4 d-flex justify-content-center align-items-center w-100" style="height: 150px;">
+      <i class="bi bi-key" style="font-size: 10rem;"></i>
+    </div>
+    <p class="text-danger">Getting started</p>
+    <h2>Writing and managing content in Ghost, and advanced guide</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi sit repellat earum, officia ea totam tenetur autem suscipit. Repellat quidem accusamus quae cum, recusandae cupiditate et ipsum dignissimos laboriosam.</p>
+  </div>
+</div>
+
+<div class="col-md-4"> <!-- s'étend sur 4 colonnes -->
+  <div class="p-4 h-100 d-flex flex-column">
+    <!-- Div icône pleine largeur, hauteur fixe -->
+    <div class="bg-info text-white p-4 d-flex justify-content-center align-items-center w-100" style="height: 150px;">
+      <i class="bi bi-circle-half" style="font-size: 7rem;"></i>
+    </div>
+    <p class="text-danger">Getting started</p>
+    <h2>Building your audience with subscriber signups</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi sit repellat earum, officia ea totam tenetur autem suscipit. Repellat quidem accusamus quae cum, recusandae cupiditate et ipsum dignissimos laboriosam.</p>
+  </div>
+</div>
+
+</section>
+
+<footer class="bg-dark text-white border-top">
+  <div class="container py-5">
+    <div class="row justify-content-center text-center text-md-start">
+      
+      <div class="col-md-4">
+        <p>© 2025 Ghost Blog</p>
+      </div>
+
+      <div class="col-md-4">
+        <p>Data & Privacy - Contact - Contributor</p>
+      </div>
+
+      <div class="col-md-4">
+        <p>By Ghost</p>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+
+</main>
+
+</body>
+
+</html>

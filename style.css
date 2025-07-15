@@ -1,0 +1,20 @@
+.navbar-gradient {
+  background: linear-gradient(90deg, #d78432, #101add);
+  color: white;
+}
+
+.navbar-gradient .nav-link,
+.navbar-gradient .navbar-brand,
+.navbar-gradient a {
+  color: white;
+}
+
+.navbar-gradient .btn-outline-primary {
+  border-color: white;
+  color: white;
+}
+
+.navbar-gradient .btn-outline-primary:hover {
+  background-color: white;
+  color: #4e54c8;
+}
