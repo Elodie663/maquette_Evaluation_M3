@@ -18,3 +18,63 @@
   background-color: white;
   color: #4e54c8;
 }
+
+.bg-image-cover {
+  background-image: url('images/0.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-image-col1 {
+    background-image: url('images/1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-image-col2 {
+  background-image: url('images/2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.bg-image-col3 {
+  background-image: url('images/3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.bg-image-col4 {
+  background-image: url('images/4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.bg-image-col5 {
+  background-image: url('images/5.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.bg-image-col6 {
+  background-image: url('images/6.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+
+  .text-justified p {
+    text-align: justify !important;
+  }
+
