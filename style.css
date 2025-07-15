@@ -73,6 +73,13 @@
 
 }
 
+.bg-image-logo {
+
+  background-image: url('images/logo_ghost.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
   .text-justified p {
     text-align: justify !important;

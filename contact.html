@@ -14,82 +14,142 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg py-3 navbar-gradient">
-  <div class="container d-flex justify-content-center align-items-center">
-    <h2 class="m-0">CONTACT</h2>
+<!-- Navbar principale avec les menus cliquables de gauche et droite -->
+
+<nav class="navbar navbar-expand-lg bg-light py-3 navbar-gradient"> <!--py-3 padding top & bottom = crée de l'espace -->
+                                                                    <!-- lg controle le responsive = replié au point de rupture -->
+  <div class="container-fluid">
+    
+    <!-- Menu gauche -->
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row gap-3">  <!--à réutliser pour le responsive : 
+                                                                            mb-2 mb-lg-0 = assure une bonne gestion des marges entre mobile et bureau
+                                                                            d-flex flex-row = force l’affichage horizontal des liens
+                                                                        -->
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Collection</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Author</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Portal</a></li>
+    </ul>
+
+    <!-- Menu droit -->
+    <div class="d-flex align-items-center gap-3">
+      <a href="#" class="text-white" aria-label="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+      <a href="#" class="text-white" aria-label="X (Twitter)"><i class="bi bi-twitter-x fs-5"></i></a>
+      <a href="#" class="btn btn-outline-primary text-dark btn-sm bg-white">Subscribe</a>
+    </div>
   </div>
 </nav>
 
+<!-- Barre du titre -->
 
+<div class="bg-white py-4 navbar-gradient">
+  <div class="container text-center">
+    <h1 class="m-0 fw-bold text-uppercase">Contact</h1>
+  </div>
+</div>
 
 <main>
-<!--Page contact : formulaire de contact-->
 
-<form class="container my-5 navbar-gradient">
-  <div class="row g-4">
-    <!-- Colonne de gauche sur une ligne et 6 colonnes -->
-    <div class="col-md-6">
-      <label for="firstname" class="form-label">First Name</label>
-      <input type="text" class="form-control" id="firstname" placeholder="Your First Name">
+    <!-- Formulaire de contact -->
+
+<div class="my-5 px-5 py-2 border-primary" style="background: linear-gradient(to right, #ff079c, #03f548);">
+                                                                          <!-- gauche vers la droite -->
+  <form class="container my-5 bg-light p-4 rounded-3 shadow">
+    <div class="row g-4">
+
+      <!-- Colonne de gauche sur une ligne et 6 colonnes -->
+
+      <div class="col-md-6">
+        <label for="firstname" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="firstname" placeholder="Your First Name">
+      </div>
+
+      <!-- Colonne de droite -->
+
+      <div class="col-md-6">
+        <label for="lastname" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="lastname" placeholder="Your Last Name">
+      </div>
+
+      <!-- Colonne gauche -->
+
+      <div class="col-md-6">
+        <label for="company" class="form-label">Company</label>
+        <input type="company" class="form-control" id="company" placeholder="Your company">
+      </div>
+
+      <!-- Colonne droite -->
+
+      <div class="col-md-6">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="phone" class="form-control" id="phone" placeholder="Your Phone">
+      </div>
+
+      <!-- Colonne gauche -->
+
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Your email">
+      </div>
+
+      <!-- Colonne droite -->
+
+      <div class="col-md-6">
+        <label for="website" class="form-label">Your Website (https)</label>
+        <input type="website" class="form-control" id="website" placeholder="URL">
+      </div>
+
+      <!-- Question sur le moment préféré de la journée -->
+
+      <div class="col-12">
+        <label class="form-label">When is the best time of day to reach you ?</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="bestTime" id="morning" value="morning">
+          <label class="form-check-label" for="morning">Morning</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="bestTime" id="evening" value="evening">
+          <label class="form-check-label" for="evening">Evening</label>
+        </div>
+      </div>
+
+      <!-- Question sur la newsletter -->
+      <div class="col-12">
+        <label class="form-label">Would you like to receive our email newsletter ?</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="newsletter" id="sure" value="sure">
+          <label class="form-check-label" for="sure">Sure !</label>
+        </div>
+      </div>
+
+      <!-- Bouton -->
+      <div class="col-12 text-start">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
     </div>
-
-    <!-- Colonne de droite -->
-    <div class="col-md-6">
-      <label for="lastname" class="form-label">Last Name</label>
-      <input type="text" class="form-control" id="lastname" placeholder="Your Last Name">
-    </div>
-
-    <!-- Colonne gauche -->
-    <div class="col-md-6">
-      <label for="company" class="form-label">Company</label>
-      <input type="company" class="form-control" id="company" placeholder="Your company">
-    </div>
-
-    <!-- Colonne droite -->
-    <div class="col-md-6">
-      <label for="phone" class="form-label">Phone Number</label>
-      <input type="phone" class="form-control" id="phone" placeholder="Your Phone">
-    </div>
-
-    <!-- Colonne gauche -->
-    <div class="col-md-6">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="Your email">
-    </div>
-
-    <!-- Colonne droite -->
-    <div class="col-md-6">
-      <label for="website" class="form-label">Your Website (htpps)</label>
-      <input type="website" class="form-control" id="website" placeholder="URL">
-    </div>
-
-    <div class="mb-3">
-  <label class="form-label">When is the best time of day to reach you ?</label><br>
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="morning" id="morning" value="morning">
-    <label class="form-check-label" for="morning">Morning</label>
-  </div>
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="evening" id="evening" value="evening">
-    <label class="form-check-label" for="evening">Evening</label>
-  </div>
+  </form>
 </div>
 
-<div class="mb-3">
-  <label class="form-label">Would you like to receive our email newsletter ?</label><br>
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="sure" id="sure" value="sure">
-    <label class="form-check-label" for="sure">Sure !</label>
-  </div>
-</div>
+<footer class="bg-dark text-white border-top">
+  <div class="container py-5">
+    <div class="row">
+      
+      <div class="col-md-4 text-start">
+        <p>© 2025 Ghost Blog</p>
+      </div>
 
+      <div class="col-md-4 text-center">
+        <p>Data & Privacy - Contact - Contributor</p>
+      </div>
 
-    <!-- Bouton -->
-    <div class="col-12 text-start">
-      <button type="submit" class="btn btn-primary">Envoyer</button>
+      <div class="col-md-4 text-end">
+        <p>By Ghost</p>
+      </div>
+      
     </div>
   </div>
-</form>
+</footer>
 
 
   </main>
