@@ -76,14 +76,15 @@
 
       <div class="col-md-6">
         <label for="company" class="form-label">Company</label>
-        <input type="company" class="form-control" id="company" placeholder="Your company">
+        <input type="text" class="form-control" id="company" placeholder="Your company">
       </div>
+
 
       <!-- Colonne droite -->
 
       <div class="col-md-6">
-        <label for="phone" class="form-label">Phone Number</label>
-        <input type="phone" class="form-control" id="phone" placeholder="Your Phone">
+        <label for="tel" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="tel" placeholder="Your Phone">
       </div>
 
       <!-- Colonne gauche -->
@@ -97,7 +98,7 @@
 
       <div class="col-md-6">
         <label for="website" class="form-label">Your Website (https)</label>
-        <input type="website" class="form-control" id="website" placeholder="URL">
+        <input type="text" class="form-control" id="website" placeholder="URL">
       </div>
 
       <!-- Question sur le moment préféré de la journée -->
@@ -131,28 +132,36 @@
   </form>
 </div>
 
-<footer class="bg-dark text-white border-top">
-  <div class="container py-5">
-    <div class="row">
+</main>
+
+<!--FOOTER responsive le contenu s'adapte à l'écran -->
+
+<footer class="bg-dark border-top">
+  <div class="container-fluid py-4">
+    <div class="row text-white text-center text-md-start align-items-center">
       
-      <div class="col-md-4 text-start">
-        <p>© 2025 Ghost Blog</p>
+      <!-- Colonne gauche -->
+      <div class="col-12 col-md-4 mb-3 mb-md-0">  <!--mb-3 mb-md-0 === 
+                                                  mb-3 → Ajoute de la marge bas sur mobile 
+                                                  (pour séparer les colonnes empilées).
+                                                  mb-md-0 → Supprime cette marge dès que les colonnes 
+                                                  s’affichent en ligne ( breakpoint md (≥768px).-->
+        <p class="mb-0">© 2025 Ghost Blog</p>
       </div>
 
-      <div class="col-md-4 text-center">
-        <p>Data & Privacy - Contact - Contributor</p>
+      <!-- Colonne centre -->
+      <div class="col-12 col-md-4 mb-3 mb-md-0">
+        <p class="mb-0">Data & Privacy - Contact - Contributor</p>
       </div>
 
-      <div class="col-md-4 text-end">
-        <p>By Ghost</p>
+      <!-- Colonne droite -->
+      <div class="col-12 col-md-4 text-md-end">
+        <p class="mb-0">By Ghost</p>
       </div>
-      
     </div>
   </div>
+
 </footer>
-
-
-  </main>
 
 </body>
 </html>

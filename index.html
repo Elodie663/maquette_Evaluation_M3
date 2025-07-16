@@ -10,16 +10,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
-  
-
 </head>
-
 <body>
-
 <!-- Navbar principale avec les menus cliquables de gauche et droite -->
 
 <nav class="navbar navbar-expand-lg bg-light py-3 navbar-gradient"> <!--py-3 padding top & bottom = crée de l'espace -->
-                                                                    <!-- lg controle le responsive = replié au point de rupture -->
+                                                       <!-- lg controle le responsive = replié au point de rupture ≥992px -->
   <div class="container-fluid">
     
     <!-- Menu gauche -->
@@ -53,70 +49,80 @@
 
 <!--Sémantique "main" ouverture du container -->
 
-<main class="container-fluid py-5">
+<main class="container-fluid py-5"> <!--py = padding vertical & conteneur fluid prend la largeur -->
 
   <!-- SECTION 1 : 8/4 -->
 
-  <section class="row mb-5 align-items-stretch">
-<div class="col-md-8">
-  <div class="p-4 h-100">
-    <!-- Ce bloc prend toute la largeur et la hauteur dispo -->
-    <div class="bg-primary text-white w-100 h-100 d-flex justify-content-center align-items-center bg-image-cover">
-<!--      <i class="fa-solid fa-circle-notch" style="font-size: 7rem;"></i> -->
+<section class="row mb-5 align-items-stretch"> <!-- propriété flex : centre les éléments verticalement -->
+<div class="col-12 col-md-8">
+    <div class="p-4 h-100">
+    <!-- Ce bloc prend toute la largeur et la hauteur W et H dispo -->
+    <div class="w-100 h-100 d-flex justify-content-center align-items-center bg-image-cover"> 
     </div>
   </div>
 </div>
 
 
-    <div class="col-md-4">
-  <div class="p-4 h-100 d-flex flex-column">
+    <div class="col-12 col-md-4">
+    <div class="p-4 h-100 d-flex flex-column">
     <p class="text-danger">Getting started</p>
     <h2><strong>Start here for a quick overview of everything you need to know</strong></h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sapiente iusto inventore? Provident molestiae saepe, corrupti blanditiis officia non, nisi nostrum modi tenetur sit vel culpa facilis fugit? Placeat, ipsam.</p>
+      <div class="mt-3 d-flex align-items-center">
+      <img src="images/logo_ghost.png" alt="Logo" class="img-fluid me-2 rounded-circle" style="width: 40px; height: 40px;">
+      <span class="text-muted"><strong>Ghost</strong><br>May, 13 2025</span>
+      </div>
   </div>
 </div>
-
-  </section>
-
+</section>
 
 <section class="row mb-5 align-items-stretch"> <!--conteneur parent et prorpiété flex poru aligner horizontalement les enfants -->
 
-<div class="col-md-4"> <!-- s'étend sur 4 colonnes -->
-  <div class="p-4 h-100 d-flex flex-column">
+<div class="col-12 col-md-4"> <!-- s'étend sur 4 colonnes -->
+  <div class="p-4 h-100 d-flex flex-column"> <!-- active Flexbox + direction verticale -->
     <!-- Div icône pleine largeur, hauteur fixe -->
-    <div class="bg-primary text-white p-4 d-flex justify-content-center align-items-center w-100 bg-image-col1" style="height: 150px;">
-<!--     <i class="fa-solid fa-cloud" style="font-size: 7rem;"></i> --> 
+    <div class="bg-primary text-white p-4 mb-4 d-flex justify-content-center align-items-center w-100 bg-image-col1" style="height: 150px;">
     </div>
-    <p class="text-danger">Getting started</p>
+    <p class="text-danger mb-1">Getting started</p>
     <h2><strong>Customizing your brand and design settings</strong></h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi sit repellat earum, officia ea totam tenetur autem suscipit. Repellat quidem accusamus quae cum, recusandae cupiditate et ipsum dignissimos laboriosam.</p>
+      <div class="mt-3 d-flex align-items-center">
+      <img src="images/logo_ghost.png" alt="Logo" class="img-fluid me-2 rounded-circle" style="width: 40px; height: 40px;">
+      <span class="text-muted"><strong>Ghost</strong><br>May, 13 2025</span>
+    </div>  
   </div>
 </div>
 
 
-<div class="col-md-4"> <!-- s'étend sur 4 colonnes -->
+<div class="col-12 col-md-4"> <!-- s'étend sur 4 colonnes -->
   <div class="p-4 h-100 d-flex flex-column">
     <!-- Div icône pleine largeur, hauteur fixe -->
-    <div class="bg-warning text-white p-4 d-flex justify-content-center align-items-center w-100 bg-image-col2" style="height: 150px;">
+    <div class="bg-warning text-white p-4 mb-4 d-flex justify-content-center align-items-center w-100 bg-image-col2" style="height: 150px;">
     </div>
-    <p class="text-danger">Getting started</p>
+    <p class="text-danger mb-1">Getting started</p>
     <h2><strong>Writing and managing content in Ghost, and advanced guide</strong></h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi sit repellat earum, officia ea totam tenetur autem suscipit. Repellat quidem accusamus quae cum, recusandae cupiditate et ipsum dignissimos laboriosam.</p>
+      <div class="mt-3 d-flex align-items-center">
+      <img src="images/logo_ghost.png" alt="Logo" class="img-fluid me-2 rounded-circle" style="width: 40px; height: 40px;">
+      <span class="text-muted"><strong>Ghost</strong><br>May, 13 2025</span>
+    </div>
   </div>
 </div>
 
-<div class="col-md-4"> <!-- s'étend sur 4 colonnes -->
+<div class="col-12 col-md-4"> <!-- Chaque colonne s’aligne sur 1/3 (4 colonnes sur 12) à partir de tablette (md, 768px) -->
   <div class="p-4 h-100 d-flex flex-column">
     <!-- Div icône pleine largeur, hauteur fixe -->
-    <div class="bg-success text-white p-4 d-flex justify-content-center align-items-center w-100 bg-image-col3" style="height: 150px;">
- <!--   <i class="fa-solid fa-lightbulb" style="font-size: 7rem;"></i>-->  
+    <div class="bg-success text-white p-4 mb-4 d-flex justify-content-center align-items-center w-100 bg-image-col3" style="height: 150px;">
     </div>
-    <p class="text-danger">Getting started</p>
+    <p class="text-danger mb-1">Getting started</p>
     <h2><strong>Building your audience with subscriber signups</strong></h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi sit repellat earum, officia ea totam tenetur autem suscipit. Repellat quidem accusamus quae cum, recusandae cupiditate et ipsum dignissimos laboriosam.</p>
+      <div class="mt-3 d-flex align-items-center">
+      <img src="images/logo_ghost.png" alt="Logo" class="img-fluid me-2 rounded-circle" style="width: 40px; height: 40px;">
+      <span class="text-muted"><strong>Ghost</strong><br>May, 13 2025</span>
+    </div>
   </div>
 </div>
-
 </section>
 
 
@@ -124,69 +130,111 @@
 
 <section class="row mb-5 align-items-stretch"> <!--conteneur parent et prorpiété flex poru aligner horizontalement les enfants -->
 
-<div class="col-md-4"> <!-- s'étend sur 4 colonnes -->
+<div class="col-12 col-md-4"> <!-- s'étend sur 4 colonnes -->
   <div class="p-4 h-100 d-flex flex-column">
     <!-- Div icône pleine largeur, hauteur fixe -->
-    <div class="bg-primary text-white p-4 d-flex justify-content-center align-items-center w-100 bg-image-col4" style="height: 150px;">
-<!--      <i class="bi bi-bricks" style="font-size: 8rem;"></i>-->
-
+    <div class="bg-primary text-white p-4 mb-4 d-flex justify-content-center align-items-center w-100 bg-image-col4" style="height: 150px;">
     </div>
-    <p class="text-danger">Getting started</p>
+    <p class="text-danger mb-1">Getting started</p>
     <h2><strong>Customizing your brand and design settings</strong></h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi sit repellat earum, officia ea totam tenetur autem suscipit. Repellat quidem accusamus quae cum, recusandae cupiditate et ipsum dignissimos laboriosam.</p>
+      <div class="mt-3 d-flex align-items-center">
+      <img src="images/logo_ghost.png" alt="Logo" class="img-fluid me-2 rounded-circle" style="width: 40px; height: 40px;">
+      <span class="text-muted"><strong>Ghost</strong><br>May, 13 2025</span>
+    </div>
   </div>
 </div>
-</div>
 
 
-<div class="col-md-4"> <!-- s'étend sur 4 colonnes -->
+<div class="col-12 col-md-4"> <!-- s'étend sur 4 colonnes -->
   <div class="p-4 h-100 d-flex flex-column">
     <!-- Div icône pleine largeur, hauteur fixe -->
-    <div class="bg-warning text-white p-4 d-flex justify-content-center align-items-center w-100 bg-image-col5" style="height: 150px;">
+    <div class="bg-warning text-white p-4 mb-4 d-flex justify-content-center align-items-center w-100 bg-image-col5" style="height: 150px;">
  <!--   <i class="bi bi-key" style="font-size: 10rem;"></i>-->  
     </div>
-    <p class="text-danger">Getting started</p>
+    <p class="text-danger mb-1">Getting started</p>
     <h2><strong>Writing and managing content in Ghost, and advanced guide</strong></h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi sit repellat earum, officia ea totam tenetur autem suscipit. Repellat quidem accusamus quae cum, recusandae cupiditate et ipsum dignissimos laboriosam.</p>
+      <div class="mt-3 d-flex align-items-center">
+      <img src="images/logo_ghost.png" alt="Logo" class="img-fluid me-2 rounded-circle" style="width: 40px; height: 40px;">
+      <span class="text-muted"><strong>Ghost</strong><br>May, 13 2025</span>
+    </div>
   </div>
 </div>
 
-<div class="col-md-4"> <!-- s'étend sur 4 colonnes -->
+<div class="col-12 col-md-4"> <!-- s'étend sur 4 colonnes -->
   <div class="p-4 h-100 d-flex flex-column">
     <!-- Div icône pleine largeur, hauteur fixe -->
-    <div class="bg-info text-white p-4 d-flex justify-content-center align-items-center w-100 bg-image-col6" style="height: 150px;">
+    <div class="bg-info text-white p-4 mb-4 d-flex justify-content-center align-items-center w-100 bg-image-col6" style="height: 150px;">
 <!--      <i class="bi bi-circle-half" style="font-size: 7rem;"></i> -->
     </div>
-    <p class="text-danger">Getting started</p>
+    <p class="text-danger mb-1">Getting started</p>
     <h2><strong>Building your audience with subscriber signups</strong></h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi sit repellat earum, officia ea totam tenetur autem suscipit. Repellat quidem accusamus quae cum, recusandae cupiditate et ipsum dignissimos laboriosam.</p>
-  </div>
-</div>
-
-</section>
-
-<footer class="bg-dark text-white border-top">
-  <div class="container py-5">
-    <div class="row">
-      
-      <div class="col-md-4 text-start">
-        <p>© 2025 Ghost Blog</p>
-      </div>
-
-      <div class="col-md-4 text-center">
-        <p>Data & Privacy - Contact - Contributor</p>
-      </div>
-
-      <div class="col-md-4 text-end">
-        <p>By Ghost</p>
-      </div>
-      
+      <div class="mt-3 d-flex align-items-center">
+      <img src="images/logo_ghost.png" alt="Logo" class="img-fluid me-2 rounded-circle" style="width: 40px; height: 40px;">
+      <span class="text-muted"><strong>Ghost</strong><br>May, 13 2025</span>
     </div>
   </div>
-</footer>
-
+</div>
+</section>
 </main>
+
+<!--FOOTER responsive le contenu s'adapte à l'écran -->
+
+<footer class="bg-dark border-top">
+  <div class="container-fluid py-4">
+    <div class="row text-white text-center text-md-start align-items-center">
+      
+      <!-- Colonne gauche -->
+      <div class="col-12 col-md-4 mb-3 mb-md-0">  <!--mb-3 mb-md-0 === 
+                                                  mb-3 → Ajoute de la marge bas sur mobile 
+                                                  (pour séparer les colonnes empilées).
+                                                  mb-md-0 → Supprime cette marge dès que les colonnes 
+                                                  s’affichent en ligne ( breakpoint md (≥768px).-->
+        <p class="mb-0">© 2025 Ghost Blog</p>
+      </div>
+
+      <!-- Colonne centre -->
+      <div class="col-12 col-md-4 mb-3 mb-md-0">
+        <p class="mb-0">Data & Privacy - Contact - Contributor</p>
+      </div>
+
+      <!-- Colonne droite -->
+      <div class="col-12 col-md-4 text-md-end">
+        <p class="mb-0">By Ghost</p>
+      </div>
+    </div>
+  </div>
+
+</footer>
 
 </body>
 
 </html>
+
+<!-- RAPPEL : Propriétes utilisées dans le code :
+
+1.Conteneurs Flex (display: flex)
+
+    d-flex : active le mode Flexbox
+
+    d-flex flex-row : active Flexbox + direction horizontale (row)
+
+    d-flex flex-column : active Flexbox + direction verticale (column)
+
+2.Gérer l'alignement horizontal (justify-content-...)
+
+    justify-content-center : centre les éléments horizontalement
+
+3.Gérer l'alignement vertical (align-items-...)
+
+    align-items-center : centre les éléments verticalement
+
+    align-items-stretch : étire les enfants pour qu’ils aient tous la même hauteur (appliqué à .row)
+
+4. Espacement entre éléments
+
+    gap-3 : ajoute un espace entre les éléments enfants dans un conteneur Flex (gap: 1rem)
+
+    -->
